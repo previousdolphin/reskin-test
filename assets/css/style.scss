@@ -1,0 +1,65 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* 1. Black Background */
+body {
+  background-color: #000000;
+  color: #e0e0e0; /* Light gray text for readability against black */
+}
+
+/* 2. Deep Red Ribbon (Outer) */
+header .ribbon-outer {
+  background: #8b0000; /* Deep Red (DarkRed) */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* 3. Deep Red Ribbon (Inner) */
+header .ribbon-inner {
+  border: 1px dashed #b22222; /* Slightly brighter red for the dashed border */
+  background: #800000; /* Darker Maroon for the inner ribbon */
+}
+
+/* 4. Ribbon Tails (The folded ends) */
+header .left-tail, header .right-tail {
+  border-color: #4d0000 transparent transparent transparent; /* Darker shadow red */
+}
+
+/* 5. Main Content Shell */
+.shell {
+  background: #111111; /* Slightly lighter black for the content area */
+  border: 1px solid #333;
+}
+
+/* 6. Text Contrast Adjustments */
+h1, h2, h3, h4, h5, h6 {
+  color: #ff4d4d; /* Bright red headers to pop against black */
+}
+
+a {
+  color: #ff3333;
+}
+
+code {
+  background: #222;
+  color: #ff9999;
+}
+
+/* Image Gallery Styling */
+#main_content img {
+  border: 4px solid #1a1a1a; /* Dark frame */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8); /* Shadow to lift art off black bg */
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#main_content img:hover {
+  transform: scale(1.02);
+  border-color: #8b0000; /* Red glow on hover */
+}
+
+/* Cleaning up the 'Fork Me' banner if you want a cleaner look */
+#forkme_banner {
+  background: #333; /* Subdued black/gray */
+  color: #8b0000;
+}
